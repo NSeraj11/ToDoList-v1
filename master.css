@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #134611;
+    color:white;
+    min-height:100vh;
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+header,form{
+    min-height:20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white; 
+}
+
+form button{
+    color:black;
+    background: grey;
+    cursor: pointer;
+    transition-delay: all 0.3s ease;
+}
+
+form button:hover{
+    background: black;
+    color:white;
+}
+
+.todo-container {
+    display:flex;
+    position: relative;
+    left:350px;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 80vh;
+}
+
+.todo-list{
+    min-width: 50%;
+    list-style:none;
+    width: 800px;
+    padding:10px;
+}
+
+.todo {
+    margin:0.5rem;
+    background:white;
+    border-radius: 15px;
+    color:black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo li{
+    flex: 1;
+}
+
+.trash-btn{
+    background-color: red;
+    color:white;
+    padding:10px;
+    border:none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.completed-btn{
+    background-color: black;
+    color: white;
+    padding:10px;
+    border:none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.edit-btn{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border:none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
